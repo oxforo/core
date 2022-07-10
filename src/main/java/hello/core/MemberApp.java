@@ -12,7 +12,6 @@ public class MemberApp {
 
 //        AppConfig appconfig = new AppConfig();
 //        MemberService memberService = appconfig.memberService();
-
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
         MemberService memberService = applicationContext.getBean("memberService", MemberService.class);
 
